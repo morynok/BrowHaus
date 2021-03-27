@@ -1,0 +1,6 @@
+framework module Pods_BrowHaus {
+  umbrella header "Pods-BrowHaus-umbrella.h"
+
+  export *
+  module * { export * }
+}
