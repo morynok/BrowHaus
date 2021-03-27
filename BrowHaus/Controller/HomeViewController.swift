@@ -11,13 +11,13 @@ import UIKit
 class HomeViewController: UIViewController {
                 
     
-    @IBOutlet weak var labelDescription: UILabel!
+  //  @IBOutlet weak var labelDescription: UILabel!
     
         override func viewDidLoad() {
         super.viewDidLoad()
 
     
-       // labelDescription.text = "TEST"
+       //labelDescription.text = "TEST"
             
             
 //            """
