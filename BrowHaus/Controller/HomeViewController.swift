@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
     
-        labelDescription.text = "TEST"
+       // labelDescription.text = "TEST"
             
             
 //            """
