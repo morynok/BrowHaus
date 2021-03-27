@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatReusableCell" rowHeight="102" id="KGk-i7-Jjw" customClass="MessageCell" customModule="BrowHaus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="503" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-ql-FPM">
+                        <rect key="frame" x="10" y="10" width="483" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BH Chat icon" translatesAutoresizingMaskIntoConstraints="NO" id="tMM-p0-TMt">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dN2-33-K0F" userLabel="width = 40"/>
+                                    <constraint firstAttribute="height" constant="50" id="eHH-oM-8yC" userLabel="height = 40"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRF-E4-Leq">
+                                <rect key="frame" x="70" y="0.0" width="343" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-Fh-mdb">
+                                        <rect key="frame" x="10" y="10" width="323" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="TSv-Fh-mdb" firstAttribute="leading" secondItem="XRF-E4-Leq" secondAttribute="leading" constant="10" id="26n-FS-iJq"/>
+                                    <constraint firstAttribute="trailing" secondItem="TSv-Fh-mdb" secondAttribute="trailing" constant="10" id="CAJ-It-5l3"/>
+                                    <constraint firstItem="TSv-Fh-mdb" firstAttribute="top" secondItem="XRF-E4-Leq" secondAttribute="top" constant="10" id="oVx-eF-MU3"/>
+                                    <constraint firstAttribute="bottom" secondItem="TSv-Fh-mdb" secondAttribute="bottom" constant="10" id="ySU-ba-2FN"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uQD-xm-dfS">
+                                <rect key="frame" x="433" y="0.5" width="50" height="49"/>
+                                <color key="tintColor" red="1" green="0.60784313729999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3nH-CE-HoH" userLabel="height = 40"/>
+                                    <constraint firstAttribute="width" constant="50" id="uri-zE-AG2" userLabel="width = 40"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tBK-ql-FPM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Eei-Db-31D"/>
+                    <constraint firstAttribute="trailing" secondItem="tBK-ql-FPM" secondAttribute="trailing" constant="10" id="mdx-h4-Mab"/>
+                    <constraint firstItem="tBK-ql-FPM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ojW-vv-NT0"/>
+                    <constraint firstAttribute="bottom" secondItem="tBK-ql-FPM" secondAttribute="bottom" constant="10" id="x3f-5J-ycg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="TSv-Fh-mdb" id="49o-qU-K83"/>
+                <outlet property="leftImageView" destination="tMM-p0-TMt" id="IrJ-X5-V9q"/>
+                <outlet property="messageBubble" destination="XRF-E4-Leq" id="ens-3n-lc2"/>
+                <outlet property="rightImageView" destination="uQD-xm-dfS" id="C8Q-fN-tJP"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BH Chat icon" width="120" height="120"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
